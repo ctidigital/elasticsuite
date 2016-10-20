@@ -97,12 +97,6 @@
         <plugin name="addStockStatusOnPrepareFrontCollection" type="Smile\ElasticsuiteCatalog\Plugin\LayerPlugin"/>
     </type>
     
-    <virtualType name="Magento\CatalogSearch\Model\Layer\Category\Context" type="Magento\Catalog\Model\Layer\Category\Context">
-        <arguments>
-            <argument name="collectionProvider" xsi:type="object">Magento\CatalogSearch\Model\Layer\Search\ItemCollectionProvider</argument>
-        </arguments>
-    </virtualType>
-    
     <virtualType name="Magento\CatalogSearch\Model\Layer\Search\Context" type="Magento\Catalog\Model\Layer\Search\Context">
         <arguments>
             <argument name="collectionProvider" xsi:type="object">Magento\CatalogSearch\Model\Layer\Search\ItemCollectionProvider</argument>
