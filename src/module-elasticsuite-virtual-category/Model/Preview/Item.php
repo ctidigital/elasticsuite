@@ -98,14 +98,13 @@ class Item
      */
     private function isInStockProduct()
     {
-        $is_in_stock = false;
-        $document    = $this->getDocumentSource();
-        
-        if(isset($document['stock']['is_in_stock'])) {
-            $is_in_stock = (bool) $document['stock']['is_in_stock'];
+        $isInStock = false;
+        $document = $this->getDocumentSource();
+        if (isset($document['stock']['is_in_stock'])) {
+            $isInStock = (bool) $document['stock']['is_in_stock'];
         }
 
-        return $is_in_stock;
+        return $isInStock;
     }
 
     /**
